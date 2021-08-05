@@ -1,7 +1,45 @@
+import Link from 'next/link';
+import styled from 'styled-components';
+import Nav from './Nav';
+
+const Logo = styled.div`
+  font-size: 4rem;
+  margin-left: 2rem;
+  position: relative;
+  background: var(--red);
+  //z-index alternative
+
+  a {
+    color: var(--offwhite);
+    text-decoration: none;
+  }
+`;
+
+const HeaderStyle = styled.header`
+  .bar {
+    border-bottom: 10px solid var(--black, black);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sub-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid var(--black, black);
+  }
+`;
+
 export default function Header() {
   return (
-    <div>
-      <p>I am the header</p>
-    </div>
+    <HeaderStyle>
+      <div className="bar">
+        <Logo>
+          <Link href="/">LOGO</Link>
+        </Logo>
+      </div>
+      <div className="sub-bar">LINKS</div>
+      <Nav />
+    </HeaderStyle>
   );
 }
