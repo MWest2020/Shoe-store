@@ -1,13 +1,13 @@
-import Link from 'next/link';
-import styled from 'styled-components';
-import Nav from './Nav';
+import Link from "next/link";
+import styled from "styled-components";
+import Nav from "./Nav.js";
 
 const Logo = styled.div`
   font-size: 4rem;
   margin-left: 2rem;
   position: relative;
   background: var(--red);
-  //z-index alternative
+  z-index: 2;
 
   a {
     color: var(--offwhite);
