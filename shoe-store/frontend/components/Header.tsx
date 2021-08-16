@@ -7,10 +7,10 @@ const Logo = styled.div`
   margin-left: 2rem;
   position: relative;
   background: var(--red);
-  z-index: 2;
+  /* z-index: 2; */
 
   a {
-    color: var(--offwhite);
+    color: var(--offWhite);
     text-decoration: none;
   }
 `;
@@ -21,11 +21,12 @@ const HeaderStyle = styled.header`
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
   }
   .sub-bar {
     display: grid;
     grid-template-columns: 1fr auto;
+
     border-bottom: 1px solid var(--black, black);
   }
 `;
@@ -37,9 +38,9 @@ export default function Header() {
         <Logo>
           <Link href="/">LOGO</Link>
         </Logo>
+        <Nav />
       </div>
       <div className="sub-bar">LINKS</div>
-      <Nav />
     </HeaderStyle>
   );
 }

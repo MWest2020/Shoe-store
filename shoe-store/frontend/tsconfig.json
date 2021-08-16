@@ -21,7 +21,8 @@
     "pages/_document.js",
     "pages/_app.js",
     "components/styles/ItemStyles.js",
-    "pages/products.tjs"
+    "pages/products.tjs",
+    "components/Layout.js"
   ],
   "exclude": ["node_modules"]
 }
