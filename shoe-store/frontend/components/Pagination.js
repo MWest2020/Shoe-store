@@ -27,7 +27,9 @@ export default function Pagination({ page }) {
   return (
     <PaginationStyles>
       <Head>
-        <title>Webshop | Page ${page} of </title>
+        <title>
+          Webshop | Page {page} of {pageCount}
+        </title>
       </Head>
 
       <Link href={`/products/${page - 1}`}>

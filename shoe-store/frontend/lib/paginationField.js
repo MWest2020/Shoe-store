@@ -36,7 +36,7 @@ export default function paginationField() {
       for (let i = skip; i < skip + incoming.length; i += 1) {
         merged[i] = incoming[i - skip];
       }
-      console.log(merged);
+
       // Finally we return the merged items from the cache,
       return merged;
     },
